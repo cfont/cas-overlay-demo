@@ -94,6 +94,14 @@
       </p>
     </c:if>
 
+    <p>This LogIn page protects the following Campus Services:
+      <ul>
+        <li><a href="https://sls12.sungardhe.com/web/fscj/1">Florida State College of Jacksonville Portal</a></li>
+        <li><a href="https://sls12.sungardhe.com/web/ucirvine/1">University of California, Irvine Portal</a></li>
+        <li><a href="http://localhost:8080/cas-management/">CAS Services Management</a></li>
+      </ul>
+    </p>
+
     <div id="list-languages">
       <%final String queryString = request.getQueryString() == null ? "" : request.getQueryString().replaceAll("&locale=([A-Za-z][A-Za-z]_)?[A-Za-z][A-Za-z]|^locale=([A-Za-z][A-Za-z]_)?[A-Za-z][A-Za-z]", "");%>
       <c:set var='query' value='<%=queryString%>' />
